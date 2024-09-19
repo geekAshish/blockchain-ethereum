@@ -46,4 +46,13 @@ NFTs
 # Create an account on metamask
 - copy the account address and search on blockchain explorer ( etherscan )
 
+1. Transaction hash
+
+# Gas
+- A unit of computational measurement.
+- The more complex your transaction is the more gas you have to pay.
+- Any transaction on the blockchain comes with paying gas.
+- The more people send transactions at the same time the more expensive your gas costs are
+- Transaction fee = Gas Price * How much gas you used
+
 
