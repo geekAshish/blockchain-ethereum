@@ -77,4 +77,18 @@ NFTs
 
 # Decentralized : Having no single point of authority
 
+# Signing Transactions
+- https://andersbrownworth.com/blockchain/public-private-keys/keys
+- https://andersbrownworth.com/blockchain/public-private-keys/signatures
+- Elliptic Curve Digital Signature Algorithm
+
+## Signing a transaction:
+- A "one way" process. Someone with a private key signs a transaction by their private key being hashed with their transaction data.
+- Anyone can then verify this new transaction hash with your public key.
+
+# Public Key:
+1. Is derived from your private key. Anyone can "see" it, and use it to verify that a transaction came from you.
+
+# Gas II: Block Rewards & EIP 1559
+- "The more people use a chain, the more expensive It is to send transactions"
 
