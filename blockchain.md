@@ -55,4 +55,26 @@ NFTs
 - The more people send transactions at the same time the more expensive your gas costs are
 - Transaction fee = Gas Price * How much gas you used
 
+# How do blockchain works?
+- https://andersbrownworth.com/blockchain
+- Genesis Block: The first block in a blockchain
+
+# Hash
+- https://andersbrownworth.com/blockchain/hash
+- A unique fixed length string, meant to identify a piece of data. They are created by placing said data into a "hash function"
+- ethereum uses keccak256 hashing algorithm
+- Hash Algorithms : A function that computes data into a unique hash
+- 
+
+# Nonce:
+- A "number used once" to find the "solution" to the blockchain problem.
+- It's also used to define the transaction number for an account/address.
+
+# Mining:
+- The process of finding the "solution" to the blockchain "problem".
+- In our example, the "problem" was to find a hash that starts with four zeros.
+- Nodes get paid for mining blocks.
+
+# Decentralized : Having no single point of authority
+
 
