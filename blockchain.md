@@ -130,3 +130,6 @@ NFTs
 - Layer 2: Any application built on top of a layer 1
 - rollups ( Solution to the scalablity problem )
 
+# For testing we can deploy our contract on JavaScript VM
+Smart Contracts have addresses just like our wallet accounts do
+
