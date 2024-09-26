@@ -91,4 +91,31 @@ NFTs
 
 # Gas II: Block Rewards & EIP 1559
 - "The more people use a chain, the more expensive It is to send transactions"
+- You can set a limit on how much gas you want to spend
+- https://www.youtube.com/watch?v=MGemhK9t44Q
+- 
 
+# Node
+- A single instance in a decentralized network
+- Any one can join the network
+- Blockchains are resilient
+- Blockchain nodes keep lists to the transactions that occur
+- 
+
+# Consensus
+- Consensus is the mechanism used to agree on the state of a blockchain.
+- 1. Chain Selection algorithms
+- 2. Sybil Resistance mechanism (proof of work)
+
+## Type of Sybil Resistance Mechanism
+1. PoW (Proof of work)
+2. PoS (Proof of Stack)
+
+* How to know which blockchian is the real blockchian, bitcoin and ethereum both use Nakamoto Consensus, which is combination of PoW and longest chain rule
+
+* Block Confirmations: The number of confirmations is the number of additional blocks added on after our transaction went through in a block.
+* proof of Work uses a lot of energy
+
+
+# Sybil Attack
+# 51% Attack
