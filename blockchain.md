@@ -119,3 +119,14 @@ NFTs
 
 # Sybil Attack
 # 51% Attack
+
+# Proof of Stake (POS)
+- Proof of stake nodes put up collateral, as a svbil resistance mechanism
+- Validators
+- Randomness
+- Proof of stake uses much less energy
+- Sharding ( Solution to the scalablity problem )
+- Layer 1: Base layer blockchain implementation
+- Layer 2: Any application built on top of a layer 1
+- rollups ( Solution to the scalablity problem )
+
