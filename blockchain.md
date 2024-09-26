@@ -131,5 +131,5 @@ NFTs
 - rollups ( Solution to the scalablity problem )
 
 # For testing we can deploy our contract on JavaScript VM
-Smart Contracts have addresses just like our wallet accounts do
-
+- Smart Contracts have addresses just like our wallet accounts do
+- Any time you change something on-chain, including making a new contract, it happens in a transaction
