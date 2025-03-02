@@ -18,6 +18,21 @@ address myAddress = 0xmeta_mask_address;
 bytes32 valueBytes = "cat"; // max is 32
 
 
+// public variable implicitly get assigned a function that returns its value!
+// The default visibility is internal
+int256 public favMark = 5;
+
+# Basic Solidity Functions
+function store(uint256 _favNumber) public {
+  variableName = _favNumber;
+}
+
+# Scop
+variables scop inside curly brackets
 
 
+* View and pure functions, when called aione, don't spend gas
+* View and pure functions disallow any modification of state
+* Pure functions additionally disallow you to read from blockchain state
+* In pure functions 
 
