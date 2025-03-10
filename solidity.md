@@ -37,6 +37,11 @@ function store(uint256 _favNumber) public {
   variableName = _favNumber;
 }
 
+# JavaScript VM
+You can deploy your contract on JavaScript VM for local testing
+After deploying your contract gets an address
+Smart contracts have addresses just like our wallet accounts do
+
 # Scop
 variables scop inside curly brackets
 
