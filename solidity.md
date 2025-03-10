@@ -4,6 +4,10 @@ https://github.com/smartcontractkit/full-blockchain-solidity-course-js
 # Solidity IDE
 remix.ethereum.org
 
+# contract keyword
+- Inside this {} code will be the part of smart contract
+contract SimpleStorage {}
+
 # Basic Solidity Types
 - https://docs.soliditylang.org/en/v0.8.27/types.html
 
