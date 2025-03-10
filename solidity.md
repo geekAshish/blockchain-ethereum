@@ -1,6 +1,8 @@
 # Full course content
 https://github.com/smartcontractkit/full-blockchain-solidity-course-js
 
+# Solidity IDE
+remix.ethereum.org
 
 # Basic Solidity Types
 - https://docs.soliditylang.org/en/v0.8.27/types.html
