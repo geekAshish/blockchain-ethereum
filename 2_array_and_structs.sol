@@ -1,6 +1,9 @@
 contract SolidityStorage {
   uint256 public favouriteNumber;
 
+  // Mapping
+  mapping(string => uint256) public nameToFavoriteNumber;
+
   struct People {
     string name;
     uint256 favouriteNumber;
@@ -27,5 +30,9 @@ contract SolidityStorage {
 
     or
     peoples.push(People(_favouriteNumber, _name));
+
+
+    // Mapping
+    nameToFavoriteNumberp[_name] = _favouriteNumber;
   }
 }
