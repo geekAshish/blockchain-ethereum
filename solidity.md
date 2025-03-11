@@ -49,7 +49,7 @@ function store(uint256 _favNumber) public {
 variables scop inside curly brackets
 
 
-* View and pure functions, when called aione, don't spend gas
+* View and pure functions, when called alone, don't spend gas
 * View and pure functions disallow any modification of state
 * Pure functions additionally disallow you to read from blockchain state
 * In pure functions 
