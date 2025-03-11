@@ -52,5 +52,6 @@ variables scop inside curly brackets
 * View and pure functions, when called alone, don't spend gas
 * View and pure functions disallow any modification of state
 * Pure functions additionally disallow you to read from blockchain state
-* In pure functions 
-
+* In pure functions you do some math, which use over and over again, or you can implement some algorithms
+* We spend gass only when we modify blockchain state
+* If a gas calling funtion calls a view, pure funtion - only then it will cost gas
