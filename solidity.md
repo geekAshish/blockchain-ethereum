@@ -4,7 +4,13 @@ https://github.com/smartcontractkit/full-blockchain-solidity-course-js
 # Solidity IDE
 remix.ethereum.org
 
+# SPDX-License-Identifier: MIT
+
+# pragma solidity 0.8.24
+- tells compiler to which version of solidity you gonna use
+
 # contract keyword
+- Create you contract object
 - Inside this {} code will be the part of smart contract
 contract SimpleStorage {}
 
@@ -55,3 +61,24 @@ variables scop inside curly brackets
 * In pure functions you do some math, which use over and over again, or you can implement some algorithms
 * We spend gass only when we modify blockchain state
 * If a gas calling funtion calls a view, pure funtion - only then it will cost gas
+
+# The EVM : Ethereum virtual Machine
+- Avalanche, Fantom, Polygon these are EVM compatible platform, we can deploy our solidity code on these blockchain
+
+
+# EVM Overview
+
+- EVM can access and store information in six places:
+
+1. Stack
+2. Memory
+3. Storage
+4. Calldata
+5. Code
+6. Logs
+
+- calldata is temparly veriables that can't modifyed
+- memory is temparly veriables that can be modifyed
+- storage is permanent variables that can be modifyed
+
+- struct, array, or mapping types need to be given these keyword

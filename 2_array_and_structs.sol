@@ -1,7 +1,7 @@
 contract SolidityStorage {
   uint256 public favouriteNumber;
 
-  // Mapping
+  // Mapping, (Hash table)
   mapping(string => uint256) public nameToFavoriteNumber;
 
   struct People {
