@@ -82,3 +82,8 @@ variables scop inside curly brackets
 - storage is permanent variables that can be modifyed
 
 - struct, array, or mapping types need to be given these keyword
+
+
+# Importing Contracts into other Contracts
+- One solidity file can have multiple contracts
+
