@@ -20,8 +20,9 @@ contract fundMe {
     AggregatorV3Interface priceFeed = AggregatorV3Interface();
     (uint80 roundId, int256 price, uint startedAt, uint timeStamp, uint80 answeredInRound) = priceFeed.latestRoundDate();
 
+    // ETH in terms of USD : price * 1e10
+    // type conversion type(other_type)
     
-
     return uint256(price * 1e10) // 10 ** 10
   }
 
