@@ -86,6 +86,7 @@ variables scop inside curly brackets
 
 # Importing Contracts into other Contracts
 - One solidity file can have multiple contracts
+- import './file-path';
 
 # Inheritance & Overrides
-
+- is key word
