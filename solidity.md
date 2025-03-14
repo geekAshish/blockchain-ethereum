@@ -90,3 +90,25 @@ variables scop inside curly brackets
 
 # Inheritance & Overrides
 - is key word
+
+# Transaction Fields
+* Every transaction we send it'll have these fields
+tx: transaction
+
+- Nonce: tx count for the account
+- Gas Price: price per unit of gas (in wei)
+- Gas Limit: max gas that this tx can use
+- To: address that the tx is sent to
+- Value: amount of wei to send
+- Data: what to send to the To address
+- v, r, s: components of tx signature
+
+# Payable function
+- payable keyword
+- smart contract can hold funds just like wallets can
+- everytime we deply a contract they get a contract address nearly same as wallet address
+- so both contract and wallets can hold native blockchain token like ethereum
+
+# What is reverting?
+- Undo any action before, and send remaining gas back
+
