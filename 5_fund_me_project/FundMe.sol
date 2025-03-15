@@ -28,5 +28,30 @@ contract fundMe {
     addressToAmountFunded[msg.sender] = msg.value;
   }
 
-  function withdraw() {}
+  function withdraw() public {
+    for(uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++) {
+      address funder = funders[funderIndex]
+      addressToAmountFunded[funder] = 0;
+    }
+    // reset the array
+    funders = new address[](0);
+
+    // actually withdraw the funds
+
+    // transfer
+    // msg.sender type is address
+    // payable(msg.sender) type is payable
+    payable(msg.sender).transfer(address(this).balance);
+
+
+    // send
+    bool sendSuccess = payable(msg.sender).send(address(this).balance);
+    require(sendSuccess, "send failed");
+
+    // call
+    (bool callSuccess, bytes memory dataReturned) = payable(msg.sender).call{value: address(this).balance}("");
+    require(callSuccess, "call failed");
+
+
+  }
 }
