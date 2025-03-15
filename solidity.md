@@ -115,3 +115,6 @@ tx: transaction
 # What is reverting?
 - Undo any action before, and send remaining gas back
 
+# Solidity Library
+Examples: https://solidity-by-example.org/library/
+
