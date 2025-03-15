@@ -118,3 +118,6 @@ tx: transaction
 # Solidity Library
 Examples: https://solidity-by-example.org/library/
 
+# SafeMath
+checked, unchecked
+
