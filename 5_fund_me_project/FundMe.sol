@@ -8,12 +8,14 @@ pragma solidity ^0.8.25;
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 
 contract fundMe {
+  uint256 public minimumUsd = 50 * 1e18;
+
   function fund() public payable {
     // want to be able to set a minimum fund amount in USD
     // 1. How do we send ETH to this contract?
 
     // money math is done in terms of wei so 1 ETH needs to be set as 1e18 value
-    require(msg.value > 1e18, "Error message") // 1e18 == 1 * 10 ** 18
+    require(getConversionRate(msg.value) >= minimumUsd, "Error message") // 1e18 == 1 * 10 ** 18
   }
 
   function getPrice() public {
@@ -31,7 +33,12 @@ contract fundMe {
     return priceFeed.version();
   }
 
-  function getConversionRate() {}
+  function getConversionRate(uint256 ethAmount) public view returns (uint256) {
+    uint256 ethPrice = getPrice();
+    uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1e18;
+
+    return ethAmountInUsd;
+  }
 
   function withdraw() {}
 }
