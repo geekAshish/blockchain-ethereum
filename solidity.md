@@ -134,6 +134,9 @@ checked, unchecked
 ## Immutable and constant
 constant, immutable keyword is gas effective
 
+## Custom Errors
+https://soliditylang.org/blog/2021/04/21/custom-errors/
 
-
+- Instead of having require, you can create custom error
+- This will save gas
 
