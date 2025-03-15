@@ -140,3 +140,5 @@ https://soliditylang.org/blog/2021/04/21/custom-errors/
 - Instead of having require, you can create custom error
 - This will save gas
 
+## Receive and fallback
+
