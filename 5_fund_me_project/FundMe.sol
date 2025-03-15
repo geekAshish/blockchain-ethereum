@@ -11,14 +11,14 @@ import './PriceConvertor';
 contract fundMe {
   using PriceConvertor for uint256;
 
-  uint256 public minimumUsd = 50 * 1e18;
+  uint256 public constant MINIMUM_USD = 50 * 1e18;
   address[] public funders;
   mapping(address => uint256) public addressToAmountFunded;
 
-  address public owner;
+  address public immutable i_owner;
 
   constructor() {
-    owner = msg.sender;// whom ever deploy the contract
+    i_owner = msg.sender;// whom ever deploy the contract
   }
 
   function fund() public payable {
@@ -26,10 +26,10 @@ contract fundMe {
     // 1. How do we send ETH to this contract?
 
     // money math is done in terms of wei so 1 ETH needs to be set as 1e18 value
-    // require(getConversionRate(msg.value) >= minimumUsd, "Error message") // 1e18 == 1 * 10 ** 18
+    // require(getConversionRate(msg.value) >= MINIMUM_USD, "Error message") // 1e18 == 1 * 10 ** 18
 
     // using library
-    require(msg.value.getConversionRate() >= minimumUsd, "Error message") // 1e18 == 1 * 10 ** 18
+    require(msg.value.getConversionRate() >= MINIMUM_USD, "Error message") // 1e18 == 1 * 10 ** 18
     funders.push(msg.sender);
     addressToAmountFunded[msg.sender] = msg.value;
   }
@@ -60,7 +60,7 @@ contract fundMe {
   }
 
   modifier onlyOwner {
-    require(msg.sender == owner, "Sender is not owner");
+    require(msg.sender == i_owner, "Sender is not owner");
     _;
   }
 }

@@ -128,3 +128,12 @@ checked, unchecked
 # constructor
 
 # Modifier
+
+# Advance Solidity concepts
+
+## Immutable and constant
+constant, immutable keyword is gas effective
+
+
+
+
