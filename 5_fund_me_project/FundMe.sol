@@ -31,14 +31,14 @@ contract fundMe {
     // require(getConversionRate(msg.value) >= MINIMUM_USD, "Error message") // 1e18 == 1 * 10 ** 18
 
     // using library
-    require(msg.value.getConversionRate() >= MINIMUM_USD, "Error message") // 1e18 == 1 * 10 ** 18
+    require(msg.value.getConversionRate() >= MINIMUM_USD, "Error message"); // 1e18 == 1 * 10 ** 18
     funders.push(msg.sender);
     addressToAmountFunded[msg.sender] = msg.value;
   }
 
   function withdraw() public onlyOwner {
     for(uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++) {
-      address funder = funders[funderIndex]
+      address funder = funders[funderIndex];
       addressToAmountFunded[funder] = 0;
     }
     // reset the array
@@ -70,9 +70,9 @@ contract fundMe {
   // What happens if someone sends this contract ETH without calling the fund function.
   receive() external payable {
     fund();
-  };
+  }
 
   fallback() external payable {
     fund();
-  };
+  }
 }

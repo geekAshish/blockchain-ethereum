@@ -12,7 +12,7 @@ library PriceConvertor {
     // ETH in terms of USD : price * 1e10
     // type conversion type(other_type)
     
-    return uint256(price * 1e10) // 10 ** 10
+    return uint256(price * 1e10); // 10 ** 10
   }
 
   function getVersion() internal view returns (uint256) {

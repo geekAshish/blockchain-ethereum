@@ -142,3 +142,10 @@ https://soliditylang.org/blog/2021/04/21/custom-errors/
 
 ## Receive and fallback
 
+# Ether.js
+- https://docs.ethers.org/v5/
+- https://playground.open-rpc.org/
+- web3js : alternative of etherjs
+
+- solcjs : solidity compiler via nodeJS
+
