@@ -1,6 +1,7 @@
 Chain link labs - Decentralized oracle network
 https://github.com/smartcontractkit/full-blockchain-solidity-course-js
-Ethereum blockchain : https://ethereum.org/en/learn/#smart-contracts
+Learn Ethereum blockchain : https://ethereum.org/en/learn/#smart-contracts
+Learn Ethereum : https://speedrunethereum.com/
 
 Nick szabo
 
