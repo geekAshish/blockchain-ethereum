@@ -150,3 +150,10 @@ https://soliditylang.org/blog/2021/04/21/custom-errors/
 
 - solcjs : solidity compiler via nodeJS
 
+# Hardhat Development Environment
+Flexible JavaScript based Development Environment to compile, deploy, test and debug EVM based smart contracts
+Enables easy integration of code and external tools
+Local Hardhat Network to simulate Ethereum
+Extensible plugin features
+High level of debugging features
+
