@@ -159,4 +159,11 @@ High level of debugging features
 
 - modiefy hardhat.config.js to add deployment networks
 
-- 
+8:58
+- Verifying Contracts Programmatically : etherscan docs or you can use hardhat plugin hardhat-etherscan
+
+### Interacting with contracts in hardhat
+
+
+
+
