@@ -1,4 +1,8 @@
 require("@nomicfoundation/hardhat-toolbox");
+require('./tasks/block-number')
+
+task("balance", "Prints an account's balance").setAction(async () => {});
+
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
