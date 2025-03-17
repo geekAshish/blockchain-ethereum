@@ -166,4 +166,6 @@ High level of debugging features
 
 ### Custom hardhat Tasks
 
+### Hardhat console
+npx hardhat console --network localhost
 
