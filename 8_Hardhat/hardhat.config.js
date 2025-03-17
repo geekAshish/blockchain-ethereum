@@ -12,6 +12,11 @@ module.exports = {
       url: process.env.RINKBEY_RPC_URL,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 4, // rinkbey chainid
+    },
+    // hardhat localhost node
+    localhost: {
+      url: 'http://127.0.0.1:8584/',
+      chainId: 31337
     }
   },
   solidity: "0.8.28",
